@@ -1,0 +1,57 @@
+.menus {
+    width: 100%;
+    gap: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #f5f5f5;
+
+    img {
+        width: 340px;
+        height: 251px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+
+    .menu {
+        img {
+            width: 340px;
+            height: 251px;
+        }
+
+
+        .card {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px;
+            margin-top: 15px;
+            box-shadow: 1px 0px 0px grey;
+
+            &__info .coeur {
+                float: right;
+                margin-right: 20px;
+                width: 11%;
+                height: 30px;
+
+            }
+
+            span {
+                font-size: 1.4em;
+                font-family: 'roboto' sans-serif;
+                padding-left: 10px;
+
+
+            }
+
+            &__title {
+                font-family: 'roboto' sans-serif;
+                font-weight: 700;
+                padding-left: 10px;
+
+
+            }
+        }
+    }
+
+}
