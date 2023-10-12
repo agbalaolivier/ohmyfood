@@ -1,6 +1,6 @@
 .header {
 
-    border: 1px solid;
+
 
     &__logo {
         width: 100%;
@@ -16,8 +16,8 @@
     }
 
     &__localisation {
+
         width: 100%;
-        height: 50px;
         display: flex;
         font-weight: 700;
         background-color: #eaeaea;
@@ -34,11 +34,13 @@
 
         }
 
-        img {
+        i {
             width: 20%;
             height: 16px;
             padding-top: 20px;
             margin-left: 90px;
+            margin-bottom: 20px;
+        
 
         }
     }

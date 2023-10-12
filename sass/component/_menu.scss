@@ -1,39 +1,49 @@
 .menus {
-    width: 100%;
-    gap: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 2.5em;
     background-color: #f5f5f5;
+    padding-bottom: 4em;
+    
 
-    img {
-        width: 340px;
-        height: 251px;
-        border-radius: 15px 15px 0px 0px;
+    h1{
+        margin-left: 1em;
+        padding-top: 2em;
+
+    }
+    
+
+    .menus_title{
+        margin-bottom: 2em;
     }
 
+    img {
+        width: 22em;
+        height: 16em;
+        border-radius: 15px 15px 0px 0px;
+        padding-left: 0.3em; 
+    }
+    .menu .heart{
+        float: right;
+        margin-right: 1.5em;
+        border-style: none;
+    
+    }
+    
 
-    .menu {
-        img {
-            width: 340px;
-            height: 251px;
-        }
 
 
         .card {
-            background-color: white;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 15px;
+            border-radius: 20px;
             margin-top: 15px;
-            box-shadow: 1px 0px 0px grey;
+        
+            
 
-            &__info .coeur {
-                float: right;
-                margin-right: 20px;
-                width: 11%;
-                height: 30px;
+            &_info .fa-regular {
+               
+            }
 
+            .card_info{
+                padding-left: 20px;
+                background-color: #FFFFFF;
             }
 
             span {
@@ -44,14 +54,14 @@
 
             }
 
-            &__title {
+            &_title {
                 font-family: 'roboto' sans-serif;
                 font-weight: 700;
                 padding-left: 10px;
+                
 
 
             }
         }
-    }
 
 }
