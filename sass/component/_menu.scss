@@ -20,6 +20,7 @@
         height: 16em;
         border-radius: 15px 15px 0px 0px;
         padding-left: 0.3em; 
+        margin-left: 1em;
     }
     .menu .heart{
         float: right;
@@ -34,16 +35,13 @@
         .card {
             border-radius: 20px;
             margin-top: 15px;
-        
-            
-
-            &_info .fa-regular {
-               
-            }
 
             .card_info{
-                padding-left: 20px;
+                width: 22em;
+                margin-left: 1.2em;
                 background-color: #FFFFFF;
+                border-radius:0px 0px 15px 15px ;
+                box-shadow: 5px 5px 10px gray;
             }
 
             span {

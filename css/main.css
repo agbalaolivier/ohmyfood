@@ -49,12 +49,108 @@ main {
   margin-bottom: 20px;
 }
 
-.header_resto {
-  border: solid 1px red;
+.header_resto .logo {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.header_resto .logo img {
-  height: 300px;
-  border: solid 1px green;
+.header_resto .logo .material-symbols-outlined {
+  position: absolute;
+  left: 1em;
+  margin-top: 0.9em;
+}
+.header_resto img {
+  width: 197px;
+  height: 36px;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 16em;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.resto_menus {
+  width: 100%;
+  position: relative;
+  bottom: 3em;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 40px 40px 0px 0px;
+}
+.resto_menus .btn {
+  width: 70%;
+  height: 4em;
+  border-radius: 25px;
+  margin-left: 1em;
+  margin-bottom: 3em;
+  margin-top: 2.5em;
+  box-shadow: 5px 5px 5px gray;
+  border-style: none;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+}
+.resto_menus .title_content {
+  width: 100%;
+  height: 3em;
+  margin-top: 3em;
+}
+.resto_menus .title_content h1 {
+  font-family: shrikhand;
+  margin-left: 1em;
+  font-size: 1.8em;
+}
+.resto_menus .title_content .fa-regular {
+  position: absolute;
+  left: 14em;
+  top: 3em;
+}
+.resto_menus .compo {
+  width: 100%;
+  height: 23em;
+  padding-right: 2em;
+  gap: 2em;
+}
+.resto_menus .compo .order {
+  text-decoration-color: #99E2D0;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.2em;
+}
+.resto_menus .compo span {
+  padding-left: 1em;
+}
+.resto_menus .compo .composition {
+  width: 100%;
+  height: 4em;
+  border-radius: 20px;
+  display: block;
+  gap: 1em;
+  background-color: white;
+  box-shadow: 2px 3px 2px gray;
+  margin-left: 1em;
+  font-family: roboto;
+  margin-top: 1em;
+  padding: 0.9em;
+  margin-right: 1em;
+  box-sizing: border-box;
+}
+.resto_menus .compo .composition h2 {
+  font-size: 1em;
+  font-weight: 700;
+  margin-left: 1em;
+}
+.resto_menus .compo .composition p {
+  margin-left: 1em;
+  font-size: 0.9em;
+}
+.resto_menus .compo .composition p .euro {
+  font-weight: 700;
+  align-content: end;
 }
 
 .presentation {
@@ -81,17 +177,14 @@ main {
   width: 70%;
   height: 4em;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 1em;
   margin-bottom: 3em;
   margin-top: 2.5em;
   box-shadow: 5px 5px 5px gray;
   border-style: none;
-}
-.presentation__button:hover {
   background-image: linear-gradient(#FF79DA, #9356DC);
   color: white;
 }
-
 .fonctionnements {
   padding-top: 2em;
   padding-right: 1em;
@@ -107,7 +200,6 @@ main {
   gap: 2em;
   padding-right: 1em;
   margin-bottom: 3em;
-  border: 1px solid red;
 }
 .fonctionnements .btn {
   width: 90%;
@@ -122,14 +214,13 @@ main {
   border-radius: 50%;
   padding: 5px 10px 5px 10px;
   position: absolute;
-  right: 23em;
-}
-.fonctionnements .number:hover {
+  right: 26em;
   background-color: #9356DC;
   color: #F6F6F6;
 }
 
 .fonctionnement {
+  margin-left: 2em;
   margin-left: 2em;
 }
 .fonctionnement .fa-solid:hover {
@@ -159,6 +250,7 @@ main {
   height: 16em;
   border-radius: 15px 15px 0px 0px;
   padding-left: 0.3em;
+  margin-left: 1em;
 }
 .menus .menu .heart {
   float: right;
@@ -170,8 +262,11 @@ main {
   margin-top: 15px;
 }
 .menus .card .card_info {
-  padding-left: 20px;
+  width: 22em;
+  margin-left: 1.2em;
   background-color: #FFFFFF;
+  border-radius: 0px 0px 15px 15px;
+  box-shadow: 5px 5px 10px gray;
 }
 .menus .card span {
   font-size: 1.4em;
@@ -187,7 +282,6 @@ main {
 .footer_content {
   background-color: black;
   width: 100%;
-  border: 1px solid red;
 }
 .footer_content_logo {
   filter: invert(100%);

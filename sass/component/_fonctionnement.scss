@@ -19,7 +19,6 @@
         gap: 2em;
         padding-right: 1em;
         margin-bottom: 3em;
-        border: 1px solid red;
         
  }
         
@@ -36,15 +35,15 @@
         
         }
         .number{
+    
             border-radius: 50%;
             padding: 5px 10px 5px 10px;
             position: absolute;
-            right: 23em;
-        }
-        .number:hover{
-           background-color:#9356DC ; 
+            right: 26em;
+            background-color:#9356DC ; 
            color: #F6F6F6;
         }
+        
 
     }
 
@@ -56,6 +55,7 @@
 
 .fonctionnement {
         margin-left: 2em;
+        margin-left:2em ;
 
 .fa-solid:hover {
     color: #9356DC;
