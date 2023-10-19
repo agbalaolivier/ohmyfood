@@ -1,4 +1,4 @@
-    .footer_content { 
+.footer_content { 
     background-color: black;
     width: 100%;
 
@@ -37,34 +37,5 @@
     }
 
 }
-/***************Media Queries***************/
-/* desktop ( more/dequal than 1024px) */
-@media (min-width: 1024px){
-.footer_content{
-    width: 100%;
-    display: block;
-    display: flex;
-    flex-direction: row-reverse;
 
-    &_logo{
-        margin-right: 5em;
-        padding-top: 6em;
-        
-    
-    
-    }
-
-    .footer_content_info{
-        display: block;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 8em;
-        padding-left: 2em;
-        gap: 2em;
-    }
-}
-
-
-}
 

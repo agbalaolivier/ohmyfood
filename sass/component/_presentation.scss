@@ -34,12 +34,31 @@
         border-style: none;
         background-image: linear-gradient(#FF79DA,#9356DC);    
         color: white;
+        transition-property: all;
+        transition-duration: 450ms;
     }
     &__button:hover{
+        transform: scale(0.9);
+        opacity: 0.8;
+        filter: brightness(1);
+        
        
         
     }
         
 
     
+}
+/***************Media Queries***************/
+/* desktop ( more/dequal than 1024px) */
+@media (min-width: 1024px){
+    .presentation {
+        width: 100%;
+    
+    &__button{
+        width: 35%;
+    }
+}
+
+
 }
