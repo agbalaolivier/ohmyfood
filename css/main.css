@@ -28,8 +28,9 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: spin 2s linear infinite;
-  animation-duration: 1s;
+  animation: spin 3s linear infinite;
+  animation: disappear 6s ease-in-out both;
+  animation-duration: 3s;
   transition-property: all;
 }
 @keyframes spin {
@@ -38,6 +39,16 @@ main {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1000;
+    visibility: hidden;
   }
 }
 
@@ -125,7 +136,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 40px 40px 0px 0px;
-  border: 1px solid red;
 }
 .resto_menus .title_content {
   width: 100%;
@@ -167,7 +177,6 @@ main {
   padding-top: 2em;
   overflow: hidden;
   transition: width 2s;
-  border: 1px solid red;
 }
 .resto_menus .compo .order {
   text-decoration-color: #99E2D0;
@@ -271,7 +280,6 @@ main {
   color: white;
   transition-property: transform;
   transition-duration: 400ms;
-  border: 1px solid blue;
 }
 .resto_menus .btn:hover {
   transform: scale(1.15);
@@ -393,7 +401,6 @@ main {
   cursor: pointer;
   transition: background-color 0.3s ease;
   transition-property: all;
-  border: 1px solid red;
 }
 .fonctionnements .propositions__content .btn:hover {
   filter: brightness(1em);
@@ -450,7 +457,6 @@ main {
   gap: 2.5em;
   background-color: #f5f5f5;
   padding-bottom: 6em;
-  border: 1px solid red;
 }
 .menus .menu {
   align-items: center;

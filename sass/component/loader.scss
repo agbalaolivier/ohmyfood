@@ -10,8 +10,9 @@
   margin: auto;
   position: absolute;
   top: 12em; left: 0; right: 0; bottom: 0;
-  animation:  spin 2s linear infinite;
-  animation-duration: 1s;
+  animation:  spin 3s linear infinite;
+  animation: disappear 6s ease-in-out both;
+  animation-duration: 3s;
   transition-property: all;
 
   @keyframes spin {
@@ -24,4 +25,17 @@
     }
     
   }
+  @keyframes disappear {
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      z-index: -1000;
+      visibility: hidden;
+    }
+    
+
+    }
 }
