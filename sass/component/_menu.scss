@@ -2,16 +2,14 @@
     width: 100%;
     gap: 2.5em;
     background-color: #f5f5f5;
-    padding-bottom: 4em;
+    padding-bottom: 6em;
+    border: 1px solid red;
+    
     
 
     .menu{
         align-items: center;
         display: block;
-        
-
-        
-    
     }
 
    
@@ -35,6 +33,18 @@
             border-radius: 20px;
             margin-top: 15px;
             margin-left: 0.4em;
+
+            .text_nouveau{
+                width: 4em;
+                height: 1.3em;
+                position: relative;
+                right: -12em;
+                bottom: -3em;
+                background-color:  #99E2D0;
+                color: green;
+                
+            }
+            
 
             img {
                 width: 22em;
@@ -63,7 +73,7 @@
                 padding-left: 1em;
             }
             i{
-                position: absolute;
+               position: absolute; 
             
             }
             .heart{
@@ -73,21 +83,26 @@
                 background-image: linear-gradient(#FF79DA,#9356DC);
                 transition-property: all;
                  cursor: pointer;
+                 
                 
         .fa-solid{
             opacity: 0;
+            
+            
            
         }
-              .fa-regular:active{
+              .fa-regular:hover{
                   opacity:1;
-            
+                  
                 
                  }
-        .fa-solid:active{
+        .fa-solid:hover{
             
             opacity: 1;
             background-image: none;
             color: hsl(289, 92%, 56%);
+            
+            
             
             
              }
@@ -110,6 +125,8 @@
     display: block;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 2em;
+
     
 
     h1{
@@ -125,12 +142,19 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 2em;
+    margin: auto;
+
     
 
     
     }
 
 .menu{
+
+margin: auto;
+padding: 15px;
+
+
 
 
     .card{
@@ -140,11 +164,15 @@
     img{
         width: 490px;
         height: 251px;
+    
     }
+    
     
 }
 .card_info{
     width: 490px;
+
+    
 
 }
 }

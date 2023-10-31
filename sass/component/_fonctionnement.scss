@@ -22,10 +22,10 @@
         margin-bottom: 3em;
 
         
- }
+ 
         
     
-    .btn{
+     .btn{
         width: 90%;
         height: 5em;
         border-radius: 2em;
@@ -34,40 +34,44 @@
         box-shadow: 5px 5px 15px gainsboro;
         border-style: none;
         display: block;
+        cursor: pointer;
+        transition:  background-color 0.3s ease;
+        transition-property: all;
+        border: 1px solid red;
 
-        }
+        &:hover {
+            filter: brightness(1em);
+            opacity: 0.7;
+            box-shadow:10px 10px 30px grey;
         
+
+            }
+    
+
         
-        
-        .number{
+
+         .number{
     
             border-radius: 50%;
             padding: 5px 10px 5px 10px;
-            position: absolute;
-            left: 1em;
+            position: relative;
+            right: 1em;
+            top: 2em;
             background-color:#9356DC ; 
-           color: #F6F6F6;
+            color: #F6F6F6;
         }
-        
-        
-        
-
-    }
-
-
-
-
-
-
-
-.fonctionnement {
+    
+     .fonctionnement {
         margin-left: 2em;
         margin-left:2em ;
+        margin-top: 0.5em;
+        
 
-.fa-solid:hover {
-    color: #9356DC;
-    
-}
+        
+
+        .fa-solid:hover {
+        color: #9356DC;
+        }
         
 
                               
@@ -77,8 +81,24 @@
         font-weight: 700;
         padding-left: 0.5em;
     }
+    
+
+    }
+    
+
+    }
+    
+
+    }
+
+
+
 
 }
+
+
+
+
 /***************Media Queries***************/
 /* desktop ( more/dequal than 1024px) */
 @media (min-width: 1024px){
@@ -86,27 +106,30 @@
 
         h1{
             margin-left: 5em;
+    
         }
         
     
     .propositions__content{
-        border: 1px solid blue;
+    
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
-    .btn{
-        width: 20%;
+    
+     .btn{
+        width: 20em;
 
 
         .number{
             position: relative;
-            left: -10em;
-            
-            margin-top: 1em;
+            left: -1em;
+            top: 2em;
         
         
+        }
+        
+
         }
     
     
