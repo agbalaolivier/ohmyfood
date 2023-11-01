@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 40px 40px 0px 0px;
+    border: 1px solid red;
 
     
     
@@ -23,9 +24,7 @@
     i{
         position: absolute;
         top: 3em; 
-        
-     
-     }
+    }
      .heart{
         float: right;
         right:  2em;
@@ -37,29 +36,20 @@
 
          .fa-solid{
             opacity: 0;
-           
         }
               .fa-regular:hover{
                   opacity:1;
-            
-                
                  }
-        .fa-solid:hover{
-            
+          .fa-solid:hover{
             opacity: 1;
             background-image: none;
             color: hsl(289, 92%, 56%);
-            
-            
              }
-    
-
-
-        
-         }
+            
+        }
          
 
-         }
+    }
 
       
 
@@ -80,9 +70,8 @@
        
 
           .order{
-            text-decoration-color: #99E2D0;
-            text-decoration-line: underline ;
-            text-decoration-thickness: 0.2em;
+            text-decoration : #99E2D0 underline  0.2em solid ;
+            
 
             }
 
@@ -214,24 +203,12 @@
              }
                      
                      
-                    
-
-        
-        
-
-        
-                
-                    
-
-                     
-                    
-                 
          }
     }
     
     
     
-.btn{
+   .btn{
 
     width: 70%;
     height: 4em;
@@ -255,9 +232,8 @@
         opacity: 0.9;
         filter: brightness(1);
         }
-    
+}
 
-    }
 
     
 
@@ -271,11 +247,15 @@
     
     .resto_menus{
      display: flex;
-     
      width: 70%;
      margin-left: 13em;
      justify-content: center;
      display: flex;
+    
+    
+     
+
+
      
 
     
@@ -321,6 +301,8 @@
      .btn{
         width: 30% ;
         
+        
+        
      }
      
         
@@ -329,6 +311,9 @@
 
     }
 }
+
+
+
 
 
 

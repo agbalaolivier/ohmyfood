@@ -3,6 +3,7 @@
     gap: 2.5em;
     background-color: #f5f5f5;
     padding-bottom: 6em;
+    margin: auto;
 
     
     
@@ -126,6 +127,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 2em;
+    
 
     
 
@@ -136,13 +138,12 @@
 
     .restaurant_menu{  
         width: 100%;
-    
-     display: block;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2em;
-    margin: auto;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 2em;
+        margin: auto;
 
     
 

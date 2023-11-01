@@ -1,4 +1,4 @@
-a_propos.html
+Suivre le lien de description dans le footer logo
 
 ## contextualisé le projet
 

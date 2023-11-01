@@ -39,6 +39,12 @@
 /***************Media Queries***************/
 /* desktop ( more/dequal than 1024px) */
 @media (min-width: 1024px){
+    footer{
+        width: 100%;
+        position: absolute;
+        bottom: -71em;
+        
+    
  
  
     .footer_content{
@@ -72,5 +78,14 @@
 }
 
 
+}
+
+
+}
+.la_note_enchantee{
+
+    position: relative;
+    top: -4em;
+    
 }
 

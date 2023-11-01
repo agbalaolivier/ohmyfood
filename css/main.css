@@ -17,10 +17,10 @@ main {
 .loader {
   width: 100px;
   height: 100px;
-  border-top: 10px solid #9747ff;
-  border-bottom: 10px solid #ff47dd;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #FF79DA;
   border-right: 10px solid green;
-  border-left: 10px solid #89C8FA;
+  border-left: 10px solid #99E2D0;
   border-radius: 50%;
   margin: auto;
   position: absolute;
@@ -136,6 +136,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   border-radius: 40px 40px 0px 0px;
+  border: 1px solid red;
 }
 .resto_menus .title_content {
   width: 100%;
@@ -179,9 +180,7 @@ main {
   transition: width 2s;
 }
 .resto_menus .compo .order {
-  text-decoration-color: #99E2D0;
-  text-decoration-line: underline;
-  text-decoration-thickness: 0.2em;
+  text-decoration: #99E2D0 underline 0.2em solid;
 }
 .resto_menus .compo span {
   padding-left: 1em;
@@ -457,6 +456,7 @@ main {
   gap: 2.5em;
   background-color: #f5f5f5;
   padding-bottom: 6em;
+  margin: auto;
 }
 .menus .menu {
   align-items: center;
@@ -597,22 +597,31 @@ main {
 /***************Media Queries***************/
 /* desktop ( more/dequal than 1024px) */
 @media (min-width: 1024px) {
-  .footer_content {
+  footer {
+    width: 100%;
+    position: absolute;
+    bottom: -71em;
+  }
+  footer .footer_content {
     display: block;
     display: flex;
     flex-direction: row-reverse;
     padding-top: 5em;
   }
-  .footer_content_logo {
+  footer .footer_content_logo {
     margin-right: 5em;
   }
-  .footer_content .footer_content_info {
+  footer .footer_content .footer_content_info {
     display: block;
     display: flex;
     flex-direction: row;
     padding-top: 1em;
     padding-left: 25em;
   }
+}
+.la_note_enchantee {
+  position: relative;
+  top: -4em;
 }
 
 /*# sourceMappingURL=main.css.map */
