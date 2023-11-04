@@ -1,16 +1,16 @@
+.card{
+    width: 100%;
+}
 .resto_menus{
+    width: 100%;
     position: relative;
-    bottom: 4em;
+    bottom: 3em;
     background-color:#F6F6F6;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 40px 40px 0px 0px;
-    border: 1px solid red;
-
-    
-    
-       
+ 
        .title_content{
         width: 100%;
         height: 3em;
@@ -43,7 +43,7 @@
           .fa-solid:hover{
             opacity: 1;
             background-image: none;
-            color: hsl(289, 92%, 56%);
+            color: hwb(307 36% 25%);
              }
             
         }
@@ -51,24 +51,13 @@
 
     }
 
-      
-
-      
-
     .compo{
         width: 100%;
         padding-right: 2em;
         padding-top: 2em;
         overflow: hidden;
-        transition: width 2s;
-         
-       
-       
-
-      
-      
-       
-
+        
+        
           .order{
             text-decoration : #99E2D0 underline  0.2em solid ;
             
@@ -90,19 +79,15 @@
             background-color: white;
             box-shadow: 2px 3px 2px gray;
             margin-left: 1em;
-            font-family: roboto;
+            font-family: roboto sans-serif;
             margin-top: 2em;
             padding: 1em;
             margin-right: 1em;
             box-sizing: border-box;
             cursor: pointer;
+            overflow: hidden;
             white-space: nowrap;
-            animation: fadein 3s ease-in-out;
-            transition-property: all;
-        
-
-            
-            
+            transition: padding-right 450ms ease-in-out;
 
             @keyframes fadein {
                 from {
@@ -113,17 +98,8 @@
                   opacity: 1;
                 }
                 
-
                 }
                 
-                
-
-                
-           
-
-        
-            
-
             h2{
                 font-size: 1.1em;
                 font-weight: 700;
@@ -133,27 +109,22 @@
             p{
                 margin-left: 0.5em;
                 font-size: 0.8em;
-            
-                
-
                 }
             
                 
                 
                      i{
-                        color: #fff;
-                    
-                        
+                        color: #fff;    
                     }
 
 
                      .check{
-                    
+                        width: 100%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         background-color: #99E2D0;
-                        width: 3em;
+                        width: 5em;
                         height: 4.3em;
                         border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
@@ -162,14 +133,13 @@
                         top: -57px;
                         opacity: 0;
                         padding: 0.5em;
-                        transition:transform  ;
+                        transition: transform 330ms ease-in-out;
                         overflow: hidden;
+                        text-overflow: ellipsis;
                         transition: transform;
                         transition-property: all;
                         transition-duration: 450ms;
                         
-                        
-
                         }
     
 
@@ -187,24 +157,48 @@
                         text-overflow: ellipsis;
                         overflow: hidden;
                         transition-property:  all;
+                        transition-duration: 450ms;
+                        transition: padding-right 450ms ease-in-out;
+                        
+                        @keyframes fadein {
+                            from {
+                              opacity: 0;
+                              
+                            }
+                            to {
+                              opacity: 1;
+                            }
+                            
+                            }
+                        }
+                        
+                
                     
 
                     .euro{
                     font-weight: 700;
                     float: inline-end;
                     transition: all;
-                    margin-right: 3em;
                     transition-property: all;
-                    }
-                
-                    
-                    
-                
+                    transition-duration: 450ms;
+                    animation: fadein 3s ease-in-out;
+                    transition: width 3s;
+                    transition: padding-right 450ms ease-in-out;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    }  
              }
+             .composition:hover .end_line .euro{
+                padding-right: 25px;
+                
+                transform: translate(-50px);
+               }
+             
                      
                      
          }
-    }
+        
+    
     
     
     
@@ -232,15 +226,21 @@
         opacity: 0.9;
         filter: brightness(1);
         }
-}
+        
+
+        }
+        
+
+        
+
 
 
     
 
  
  /***************Media Queries***************/
-/* desktop ( more/dequal than 1024px) */
-@media (min-width: 1024px){
+/* desktop ( more/equal than 1280px) */
+@media (min-width: 1280px){
     main{
         background-color: white;
         
@@ -251,6 +251,7 @@
      margin-left: 13em;
      justify-content: center;
      display: flex;
+    
     
     
      
@@ -288,11 +289,12 @@
 
 
         .composition{
+            width: 90%;
 
 
             .check{
                 position: relative;
-                left: 35em;
+                left: 30.5em;
             }
         }
      }
@@ -311,6 +313,7 @@
 
     }
 }
+
 
 
 

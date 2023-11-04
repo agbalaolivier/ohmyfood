@@ -1,4 +1,6 @@
-.fonctionnements { 
+
+
+ .fonctionnements { 
     padding-top: 2em;
     padding-right: 1em;
     padding-bottom: 2em;
@@ -99,10 +101,16 @@
 
 
 
+
+
+
 /***************Media Queries***************/
-/* desktop ( more/dequal than 1024px) */
-@media (min-width: 1024px){
+/* desktop ( more/dequal than 1280px) */
+@media  (min-width: 1280px){
     .fonctionnements{
+        
+    
+    
 
         h1{
             margin-left: 5em;
@@ -142,3 +150,5 @@
     }
 
 }
+
+

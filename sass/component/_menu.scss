@@ -1,24 +1,33 @@
-.menus {
+@media (max-width:766px) {
+
+.menus{
+
+
     width: 100%;
     gap: 2.5em;
     background-color: #f5f5f5;
     padding-bottom: 6em;
     margin: auto;
-
     
+    
+
+
     
 
     .menu{
+        
         align-items: center;
         display: block;
-    }
+    
+    
 
    
     
 
     h1{
-        margin-left: 1em;
-        padding-top: 2em;
+        
+        padding-top: 1em;
+        
 
     }
     
@@ -31,26 +40,31 @@
     
 
         .card {
+            width: 100%;
             border-radius: 20px;
             margin-top: 15px;
             margin-left: 0.4em;
+    
 
             .text_nouveau{
                 width: 4em;
                 height: 1.3em;
                 position: relative;
-                right: -12em;
+                right: -17em;
                 bottom: -3em;
                 background-color:  #99E2D0;
-                color: green;
+                color: #008766;
+            
                 
             }
             
 
-            img {
+                img {
                 width: 22em;
                 height: 16em;
-                border-radius: 15px 15px 0px 0px;
+                border-radius: 15px, 15px, 0px, 0px;
+                
+            
             }
             
         }
@@ -86,47 +100,45 @@
                  cursor: pointer;
                  
                 
+                 
+                
         .fa-solid{
             opacity: 0;
-            
+            color: hwb(307 36% 25%);
             
            
-        }
+            
+            }
               .fa-regular:hover{
-                  opacity:1;
+                  opacity:0;
+                 
                   
                 
                  }
         .fa-solid:hover{
             
-            opacity: 1;
-            background-image: none;
-            color: hsl(289, 92%, 56%);
-            
-            
-            
+            opacity: 1;    
+            transition: all 0.5s ease-in-out;
             
              }
-    
-
+            }
         }
+    }
+ }
+ }
     
-
-        }
-    
-
-
-}
 /***************Media Queries***************/
-/* desktop ( more/dequal than 1024px) */
-@media (min-width: 1024px){
+/* desktop ( more/equal than 1280px) */
+@media (min-width: 1280px){
 
 .menus{
     width: 100%;
     display: block;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 2em;
+    padding-top: 1.5em;
+   
+    
     
 
     
@@ -144,44 +156,135 @@
         justify-content: space-evenly;
         gap: 2em;
         margin: auto;
-
-    
-
-    
+           
     }
 
-.menu{
+    .menu{
+    
+    margin: auto;
+    padding: 15px;
+    
+    
+    
+    
+        .card{
+    
+        width: 100%;
 
-margin: auto;
-padding: 15px;
-
-
-
-
-    .card{
-
-    width: 100%;
-
-    img{
+        .text_nouveau{
+            width: 4em;
+            height: 1.3em;
+            position: relative;
+            right: -26em;
+            bottom: -3em;
+            background-color:#99E2D0;
+            color:#008766 ;
+        
+            
+        }
+    
+        img{
+            width: 490px;
+            height: 251px;
+        
+        }
+        
+        
+    }
+    .card_info{
         width: 490px;
-        height: 251px;
-    
+        background-color: #FFFFFF;
+        border-radius:0px 0px 15px 15px ;
+        box-shadow: 3px 3px 7px gray;
+
+        .card_title {
+            font-family: 'roboto' sans-serif;
+            font-weight: 700;
+            padding-left: 1em;   
+        }
+
+        span {
+            font-size: 1.4em;
+            font-family: 'roboto' sans-serif;
+            padding-left: 1em;
+        }
+        i{
+           position: absolute; 
+        
+        }
+        .heart{
+            float: right;
+            margin-right: 3em;
+            border-style: none;
+            background-image: linear-gradient(#FF79DA,#9356DC);
+            transition-property: all;
+             cursor: pointer;
+             
+            
+             
+            
+    .fa-solid{
+        opacity: 0;
+        color: hwb(307 36% 25%);
+        
+       
+        
+        }
+          .fa-regular:hover{
+              opacity:0;
+             
+              
+            
+             }
+    .fa-solid:hover{
+        
+        opacity: 1;    
+        transition: all 0.5s ease-in-out;
+     }
     }
-    
-    
 }
-.card_info{
-    width: 490px;
+}
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
 
     
-
-}
-}
-
-}
+    
 
 
-}
+    
+
+   
+
+
+
+
+
+
+
+    
+
+    
+
+
+    
+
+
+
+
 
 
 
