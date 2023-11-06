@@ -176,7 +176,6 @@ main {
 main {
   display: flex;
   justify-content: center;
-  padding: auto;
 }
 main .resto_menus {
   width: 100%;
@@ -249,13 +248,16 @@ main .resto_menus .compo .composition {
   box-sizing: border-box;
   cursor: pointer;
   transition: padding-right 450ms ease-in-out;
+  animation: fadein 3s ease-in;
 }
 @keyframes fadein {
-  from {
+  0% {
     opacity: 0;
+    transform: translateX(-50px);
   }
-  to {
+  100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 main .resto_menus .compo .composition h2 {

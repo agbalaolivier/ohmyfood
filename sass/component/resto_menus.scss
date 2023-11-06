@@ -1,11 +1,10 @@
 main{
     display: flex;
     justify-content: center;
-    padding: auto;
 
 
 
-.resto_menus{
+    .resto_menus{
     width: 100%;
     position: relative;
     bottom: 3em;
@@ -92,14 +91,18 @@ main{
             box-sizing: border-box;
             cursor: pointer;
             transition: padding-right 450ms ease-in-out;
+            animation: fadein 3s ease-in ;
 
             @keyframes fadein {
-                from {
+                0% {
                   opacity: 0;
+                  transform: translateX(-50px);
+
                   
                 }
-                to {
+                100% {
                   opacity: 1;
+                  transform: translateX(0);
                 }
                 
                 }
@@ -221,148 +224,91 @@ main{
     color: white;
     transition-property: transform;
     transition-duration: 400ms;
-    
-    
-
-    }
-    .btn:hover {
+   }
+     .btn:hover {
         transform: scale(1.15);
         opacity: 0.9;
         filter: brightness(1);
         }
         
 
-        }
+    }
         
 
-        }
+
+
+}
         /*************media queries**************/
  /**meduim devise(tablette les/equal 1024***/
  @media (min-width:768px) and (max-width:1024px){
     main{
         background-color: white;
-
-    
-    .resto_menus{
+        
+        .resto_menus{
         margin-left: 35px;
         margin-right: 35px;
 
         .title_content{
             display: block;
             align-content: center;
-    
-         
-    
-         h1{
+
+            h1{
             text-align: center;
-            
-            
-        
-         }
+        }
          .heart{
             padding-right: 15em;
-            
-            
-         }
-         
-    
-         }
-
-        .btn{
-
-            width: 40%;
-            margin-left: 18em;
         }
-        
-     .compo{
-        width: 70%;
+    }
+    .btn{
+        width: 40%;
+        margin-left: 18em;
 
+        }
+
+        .compo{
+        width: 70%;
 
         .composition{
             width: 90%;
-        
-
-
 
             .check{
                 position: relative;
                 left: 27em;
             }
         }
-     }
-     
+    }
+}
+}
 
-     }
-
-        
-            
-
-
- }
- 
-
- }
-        
-
-        
-
-
-
-    
-
- 
+}
  /***************Media Queries***************/
 /* desktop ( more/equal than 1280px) */
 @media (min-width: 1280px){
     main{
         background-color: white;
         
-    
     .resto_menus{
      display: flex;
      width: 70%;
      justify-content: center;
      display: flex;
     
-    
-    
-     
-
-
-     
-
-    
-     
-
-     .title_content{
+    .title_content{
         display: block;
         align-content: center;
 
-     
-
-     h1{
+        h1{
         text-align: center;
-        
-        
-    
-     }
+        }
      .heart{
         padding-right: 20em;
-        
-        
+         }
      }
-     
-
-     }
-     
-
      .compo{
         width: 70%;
 
-
         .composition{
             width: 90%;
-
 
             .check{
                 position: relative;
@@ -375,15 +321,8 @@ main{
      .btn{
         width: 30% ;
         margin-right: 30px;
-        
-        
-        
+        }
      }
-     
-        
-    }
-    
-
     }
 }
 
