@@ -122,9 +122,6 @@ main {
     padding-left: 37%;
   }
 }
-.header_resto {
-  width: 100%;
-}
 .header_resto .logo {
   width: 100%;
   height: 63px;
@@ -163,9 +160,6 @@ main {
 /***************Media Queries***************/
 /* desktop ( more/dequal than 1280px) */
 @media (min-width: 1280px) {
-  .header_resto {
-    width: 100%;
-  }
   .header_resto .logo {
     width: 100%;
   }
@@ -178,7 +172,6 @@ main {
   justify-content: center;
 }
 main .resto_menus {
-  width: 100%;
   position: relative;
   bottom: 3em;
   background-color: #F6F6F6;
@@ -235,6 +228,7 @@ main .resto_menus .compo span {
   padding-left: 1em;
 }
 main .resto_menus .compo .composition {
+  max-width: 100%;
   height: 5em;
   border-radius: 20px;
   display: block;
@@ -245,6 +239,9 @@ main .resto_menus .compo .composition {
   font-family: roboto sans-serif;
   margin-top: 2em;
   padding: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   box-sizing: border-box;
   cursor: pointer;
   transition: padding-right 450ms ease-in-out;
@@ -265,10 +262,10 @@ main .resto_menus .compo .composition h2 {
   font-size: 1.1em;
   font-weight: 700;
   margin-left: 0.5em;
-}
-main .resto_menus .compo .composition p {
-  margin-left: 0.5em;
-  font-size: 0.8em;
+  font-family: roboto sans serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main .resto_menus .compo .composition i {
   color: #fff;
@@ -279,15 +276,18 @@ main .resto_menus .compo .composition .check {
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 4em;
+  width: 5em;
   height: 4.8em;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
   left: 16em;
   top: -51px;
-  opacity: 0;
+  opacity: 1;
   padding: 0.1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   transition: transform 330ms ease-in-out;
   transition: transform;
   transition-property: all;
@@ -296,13 +296,37 @@ main .resto_menus .compo .composition .check {
 main .resto_menus .compo .composition .check:hover {
   opacity: 1;
   transform: translate(32px);
+  overflow: hidden;
 }
 main .resto_menus .compo .composition .end_line {
-  width: 100%;
+  max-width: 100%;
+  display: block;
   margin-left: 10px;
   margin: 0;
+  font-family: roboto sans serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   transition-property: all;
   transition-duration: 450ms;
+  transition: padding-right 450ms ease-in-out;
+}
+main .resto_menus .compo .composition .end_line p {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  overflow: hidden;
+  max-width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+main .resto_menus .compo .composition .end_line p .euro {
+  font-weight: 700;
+  float: inline-end;
+  transition: all;
+  transition-property: all;
+  transition-duration: 450ms;
+  animation: fadein 3s ease-in-out;
+  transition: width 3s;
   transition: padding-right 450ms ease-in-out;
 }
 @keyframes fadein {
@@ -313,24 +337,16 @@ main .resto_menus .compo .composition .end_line {
     opacity: 1;
   }
 }
-main .resto_menus .compo .composition .euro {
-  font-weight: 700;
-  float: inline-end;
-  transition: all;
-  transition-property: all;
-  transition-duration: 450ms;
-  animation: fadein 3s ease-in-out;
-  transition: width 3s;
-  transition: padding-right 450ms ease-in-out;
-  text-overflow: ellipsis;
+main .resto_menus .compo .composition .end_line p {
+  max-width: 85%;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 main .resto_menus .compo .composition:hover .end_line .euro {
   padding-right: 25px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
   transform: translate(-35px);
+  overflow: hidden;
 }
 main .resto_menus .btn {
   width: 70%;
@@ -703,6 +719,7 @@ main .resto_menus .btn:hover {
   }
   .menus h1 {
     margin-left: 1em;
+    border: 1px solid red;
   }
   .menus .restaurant_menu {
     width: 100%;
@@ -854,12 +871,8 @@ main .resto_menus .btn:hover {
     transition: all 0.5s ease-in-out;
   }
 }
-footer {
-  width: 100%;
-}
 footer .footer_content {
   background-color: black;
-  width: 100%;
 }
 footer .footer_content_logo {
   filter: invert(100%);
@@ -869,7 +882,6 @@ footer .footer_content_logo {
   margin-top: 2em;
 }
 footer .footer_content_info {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: 2em;
