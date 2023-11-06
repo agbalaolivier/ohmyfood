@@ -1,5 +1,12 @@
+main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
 .card{
     width: 100%;
+
 }
 .resto_menus{
     width: 100%;
@@ -9,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
     border-radius: 40px 40px 0px 0px;
  
        .title_content{
@@ -17,6 +25,7 @@
         margin-top: 3em;
     
     h1{
+        width: 100%;
         font-family: shrikhand;
         margin-left: 1em;
         font-size: 1.8em;
@@ -59,6 +68,7 @@
         
         
           .order{
+            
             text-decoration : #99E2D0 underline  0.2em solid ;
             
 
@@ -86,6 +96,7 @@
             box-sizing: border-box;
             cursor: pointer;
             overflow: hidden;
+            text-overflow: ellipsis;
             white-space: nowrap;
             transition: padding-right 450ms ease-in-out;
 
@@ -101,6 +112,7 @@
                 }
                 
             h2{
+                width: 100%;
                 font-size: 1.1em;
                 font-weight: 700;
                 margin-left: 0.5em;
@@ -109,6 +121,7 @@
             p{
                 margin-left: 0.5em;
                 font-size: 0.8em;
+                
                 }
             
                 
@@ -124,15 +137,15 @@
                         justify-content: center;
                         align-items: center;
                         background-color: #99E2D0;
-                        width: 5em;
-                        height: 4.3em;
+                        width: 4em;
+                        height: 5.2em;
                         border-top-right-radius: 20px;
                         border-bottom-right-radius: 20px;
                         position: relative;
-                        left: 15em;
-                        top: -57px;
+                        left: 16em;
+                        top: -51px;
                         opacity: 0;
-                        padding: 0.5em;
+                        padding: 0.1em;
                         transition: transform 330ms ease-in-out;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -141,12 +154,13 @@
                         transition-duration: 450ms;
                         
                         }
-    
+
 
                         .check:hover{
                             opacity: 1;
-                            transform: translate(50px);
+                            transform: translate(32px);
                             overflow: hidden;
+                            
                             }
                             
                         .end_line{
@@ -176,6 +190,7 @@
                     
 
                     .euro{
+                
                     font-weight: 700;
                     float: inline-end;
                     transition: all;
@@ -191,7 +206,8 @@
              .composition:hover .end_line .euro{
                 padding-right: 25px;
                 
-                transform: translate(-50px);
+                
+                transform: translate(-35px);
                }
              
                      
@@ -225,6 +241,9 @@
         transform: scale(1.15);
         opacity: 0.9;
         filter: brightness(1);
+        }
+        
+
         }
         
 

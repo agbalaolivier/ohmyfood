@@ -33,10 +33,10 @@ main {
 .chargement .loader {
   width: 100px;
   height: 100px;
-  border-top: 5px solid #9356DC;
-  border-bottom: 5px solid #FF79DA;
-  border-right: 5px solid transparent;
-  border-left: 5px solid #99E2D0;
+  border-top: 3px solid #9356DC;
+  border-bottom: 3px solid #FF79DA;
+  border-right: 3px solid transparent;
+  border-left: 3px solid #99E2D0;
   border-radius: 50%;
   margin: auto;
   z-index: 50;
@@ -149,11 +149,15 @@ main {
   border-radius: 15px 15px 0px 0px;
 }
 
-.card {
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+main .card {
   width: 100%;
 }
-
-.resto_menus {
+main .resto_menus {
   width: 100%;
   position: relative;
   bottom: 3em;
@@ -161,23 +165,25 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: auto;
   border-radius: 40px 40px 0px 0px;
 }
-.resto_menus .title_content {
+main .resto_menus .title_content {
   width: 100%;
   height: 3em;
   margin-top: 3em;
 }
-.resto_menus .title_content h1 {
+main .resto_menus .title_content h1 {
+  width: 100%;
   font-family: shrikhand;
   margin-left: 1em;
   font-size: 1.8em;
 }
-.resto_menus .title_content i {
+main .resto_menus .title_content i {
   position: absolute;
   top: 3em;
 }
-.resto_menus .title_content .heart {
+main .resto_menus .title_content .heart {
   float: right;
   right: 2em;
   margin-right: 3em;
@@ -186,30 +192,30 @@ main {
   transition-property: all;
   cursor: pointer;
 }
-.resto_menus .title_content .heart .fa-solid {
+main .resto_menus .title_content .heart .fa-solid {
   opacity: 0;
 }
-.resto_menus .title_content .heart .fa-regular:hover {
+main .resto_menus .title_content .heart .fa-regular:hover {
   opacity: 1;
 }
-.resto_menus .title_content .heart .fa-solid:hover {
+main .resto_menus .title_content .heart .fa-solid:hover {
   opacity: 1;
   background-image: none;
   color: hwb(307 36% 25%);
 }
-.resto_menus .compo {
+main .resto_menus .compo {
   width: 100%;
   padding-right: 2em;
   padding-top: 2em;
   overflow: hidden;
 }
-.resto_menus .compo .order {
+main .resto_menus .compo .order {
   text-decoration: #99E2D0 underline 0.2em solid;
 }
-.resto_menus .compo span {
+main .resto_menus .compo span {
   padding-left: 1em;
 }
-.resto_menus .compo .composition {
+main .resto_menus .compo .composition {
   width: 100%;
   height: 5em;
   border-radius: 20px;
@@ -225,6 +231,7 @@ main {
   box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
   transition: padding-right 450ms ease-in-out;
 }
@@ -236,33 +243,34 @@ main {
     opacity: 1;
   }
 }
-.resto_menus .compo .composition h2 {
+main .resto_menus .compo .composition h2 {
+  width: 100%;
   font-size: 1.1em;
   font-weight: 700;
   margin-left: 0.5em;
 }
-.resto_menus .compo .composition p {
+main .resto_menus .compo .composition p {
   margin-left: 0.5em;
   font-size: 0.8em;
 }
-.resto_menus .compo .composition i {
+main .resto_menus .compo .composition i {
   color: #fff;
 }
-.resto_menus .compo .composition .check {
+main .resto_menus .compo .composition .check {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99E2D0;
-  width: 5em;
-  height: 4.3em;
+  width: 4em;
+  height: 5.2em;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   position: relative;
-  left: 15em;
-  top: -57px;
+  left: 16em;
+  top: -51px;
   opacity: 0;
-  padding: 0.5em;
+  padding: 0.1em;
   transition: transform 330ms ease-in-out;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -270,12 +278,12 @@ main {
   transition-property: all;
   transition-duration: 450ms;
 }
-.resto_menus .compo .composition .check:hover {
+main .resto_menus .compo .composition .check:hover {
   opacity: 1;
-  transform: translate(50px);
+  transform: translate(32px);
   overflow: hidden;
 }
-.resto_menus .compo .composition .end_line {
+main .resto_menus .compo .composition .end_line {
   width: 100%;
   margin-left: 10px;
   margin: 0;
@@ -294,7 +302,7 @@ main {
     opacity: 1;
   }
 }
-.resto_menus .compo .composition .euro {
+main .resto_menus .compo .composition .euro {
   font-weight: 700;
   float: inline-end;
   transition: all;
@@ -306,11 +314,11 @@ main {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.resto_menus .compo .composition:hover .end_line .euro {
+main .resto_menus .compo .composition:hover .end_line .euro {
   padding-right: 25px;
-  transform: translate(-50px);
+  transform: translate(-35px);
 }
-.resto_menus .btn {
+main .resto_menus .btn {
   width: 70%;
   height: 4em;
   border-radius: 25px;
@@ -325,7 +333,7 @@ main {
   transition-property: transform;
   transition-duration: 400ms;
 }
-.resto_menus .btn:hover {
+main .resto_menus .btn:hover {
   transform: scale(1.15);
   opacity: 0.9;
   filter: brightness(1);
@@ -512,6 +520,27 @@ main {
   padding-left: 0.5em;
 }
 
+/*************media queries**************/
+/**meduim devise(tablette les/equal 1024***/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .fonctionnements h1 {
+    margin-left: 1em;
+  }
+  .fonctionnements .propositions__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fonctionnements .propositions__content .btn {
+    width: 50%;
+  }
+  .fonctionnements .propositions__content .btn .number {
+    position: relative;
+    left: -1em;
+    top: 2em;
+  }
+}
 /***************Media Queries***************/
 /* desktop ( more/dequal than 1280px) */
 @media (min-width: 1280px) {
@@ -533,7 +562,7 @@ main {
     top: 2em;
   }
 }
-@media (max-width: 766px) {
+@media (max-width: 767.68px) {
   .menus {
     width: 100%;
     gap: 2.5em;
@@ -541,15 +570,16 @@ main {
     padding-bottom: 6em;
     margin: auto;
   }
-  .menus .menu {
-    align-items: center;
-    display: block;
+  .menus .menus_title {
+    margin-bottom: 2em;
   }
-  .menus .menu h1 {
+  .menus h1 {
     padding-top: 1em;
   }
-  .menus .menu .menus_title {
-    margin-bottom: 2em;
+  .menus .menu {
+    width: 100%;
+    align-items: center;
+    display: block;
   }
   .menus .menu .card {
     width: 100%;
@@ -577,6 +607,90 @@ main {
     border-radius: 0px 0px 15px 15px;
     box-shadow: 3px 3px 7px gray;
     margin-left: 0.4em;
+  }
+  .menus .menu .card_info .card_title {
+    font-family: "roboto" sans-serif;
+    font-weight: 700;
+    padding-left: 1em;
+  }
+  .menus .menu .card_info span {
+    font-size: 1.4em;
+    font-family: "roboto" sans-serif;
+    padding-left: 1em;
+  }
+  .menus .menu .card_info i {
+    position: absolute;
+  }
+  .menus .menu .card_info .heart {
+    float: right;
+    margin-right: 3em;
+    border-style: none;
+    background-image: linear-gradient(#FF79DA, #9356DC);
+    transition-property: all;
+    cursor: pointer;
+  }
+  .menus .menu .card_info .heart .fa-solid {
+    opacity: 0;
+    color: hwb(307 36% 25%);
+  }
+  .menus .menu .card_info .heart .fa-regular:hover {
+    opacity: 0;
+  }
+  .menus .menu .card_info .heart .fa-solid:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+}
+/*************media queries**************/
+/**meduim devise(tablette les/equal 1024***/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .menus {
+    border: 1px solid red;
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.5em;
+  }
+  .menus h1 {
+    margin-left: 1em;
+  }
+  .menus .restaurant_menu {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin: auto;
+  }
+  .menus .menu {
+    border: 1px solid red;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+  }
+  .menus .menu .card {
+    width: 100%;
+  }
+  .menus .menu .card .text_nouveau {
+    width: 4em;
+    height: 1.3em;
+    position: relative;
+    right: -26em;
+    bottom: -3em;
+    background-color: #99E2D0;
+    color: #008766;
+  }
+  .menus .menu .card img {
+    width: 100%;
+    height: 251px;
+  }
+  .menus .menu .card_info {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 3px 3px 7px gray;
   }
   .menus .menu .card_info .card_title {
     font-family: "roboto" sans-serif;

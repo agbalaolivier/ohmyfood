@@ -97,6 +97,57 @@
 
 
 }
+ /*************media queries**************/
+ /**meduim devise(tablette les/equal 1024***/
+ @media (min-width:768px) and (max-width:1024px){
+    .fonctionnements{
+        
+    
+    
+
+        h1{
+            margin-left: 1em;
+        
+    
+        }
+        
+    
+    .propositions__content{
+    
+        width: 100%;
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+    
+     .btn{
+        width: 50%;
+
+
+        .number{
+            position: relative;
+            left: -1em;
+            top: 2em;
+        
+        
+        }
+        
+
+        }
+    
+    
+    
+
+
+    }
+    
+
+    }
+
+}
+
+
+ 
 
 
 
