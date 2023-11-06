@@ -1,5 +1,5 @@
     footer{
-    
+    width: 100%;
 
     
     .footer_content { 
@@ -42,6 +42,58 @@
 }
 
 }
+/*************media queries**************/
+ /**meduim devise(tablette les/equal 1024***/
+ @media (min-width:768px) and (max-width:1024px){
+    footer{
+        width: 100%;
+        position: relative;
+        padding-bottom: 2em;
+    
+    
+        
+        
+    
+ 
+ 
+    .footer_content{
+    display: block;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 5em;
+
+
+
+    &_logo{
+        margin-right: 5em;
+    
+        
+    
+        
+    
+    
+    }
+
+    .footer_content_info{
+        display: block;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1em;
+        
+        
+        
+    
+    }
+}
+
+
+}
+
+
+
+ }
+
+
 /***************Media Queries***************/
 /* desktop ( more/dequal than 1024px) */
 @media (min-width: 1280px){

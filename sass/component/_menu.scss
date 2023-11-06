@@ -140,7 +140,7 @@
  /**meduim devise(tablette les/equal 1024***/
  @media (min-width:768px) and (max-width:1024px){
     .menus{
-        border: 1px solid red;
+    
         width: 100%;
         display: block;
         display: flex;
@@ -169,7 +169,8 @@
         }
     
         .menu{
-            border: 1px solid red;
+            
+    
         width: 100%;
         margin: auto;
         padding: 15px;
@@ -185,7 +186,7 @@
                 width: 4em;
                 height: 1.3em;
                 position: relative;
-                right: -26em;
+                right: -40em;
                 bottom: -3em;
                 background-color:#99E2D0;
                 color:#008766 ;
