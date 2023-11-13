@@ -216,9 +216,6 @@ main .resto_menus .compo {
   width: 100%;
   margin: auto;
   padding-top: 2em;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 main .resto_menus .compo .order {
   width: 100%;
@@ -238,10 +235,9 @@ main .resto_menus .compo .composition {
   margin: 1em;
   font-family: roboto sans-serif;
   margin-top: 2em;
-  padding: 1em;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  padding: 1em;
   box-sizing: border-box;
   cursor: pointer;
   transition: padding-right 450ms ease-in-out;
@@ -263,8 +259,6 @@ main .resto_menus .compo .composition h2 {
   font-weight: 700;
   margin-left: 0.5em;
   font-family: roboto sans serif;
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 main .resto_menus .compo .composition i {
@@ -283,11 +277,8 @@ main .resto_menus .compo .composition .check {
   position: relative;
   left: 16em;
   top: -51px;
-  opacity: 1;
+  opacity: 0;
   padding: 0.1em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   transition: transform 330ms ease-in-out;
   transition: transform;
   transition-property: all;
@@ -296,17 +287,12 @@ main .resto_menus .compo .composition .check {
 main .resto_menus .compo .composition .check:hover {
   opacity: 1;
   transform: translate(32px);
-  overflow: hidden;
 }
 main .resto_menus .compo .composition .end_line {
-  max-width: 100%;
   display: block;
-  margin-left: 10px;
-  margin: 0;
   font-family: roboto sans serif;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
   transition-property: all;
   transition-duration: 450ms;
   transition: padding-right 450ms ease-in-out;
@@ -315,19 +301,18 @@ main .resto_menus .compo .composition .end_line p {
   margin-left: 0.5em;
   font-size: 0.8em;
   overflow: hidden;
-  max-width: 80%;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 main .resto_menus .compo .composition .end_line p .euro {
   font-weight: 700;
   float: inline-end;
-  transition: all;
   transition-property: all;
   transition-duration: 450ms;
   animation: fadein 3s ease-in-out;
-  transition: width 3s;
   transition: padding-right 450ms ease-in-out;
+  overflow: hidden;
+  white-space: nowrap;
 }
 @keyframes fadein {
   from {
@@ -337,16 +322,27 @@ main .resto_menus .compo .composition .end_line p .euro {
     opacity: 1;
   }
 }
-main .resto_menus .compo .composition .end_line p {
-  max-width: 85%;
+main .resto_menus .compo .composition:hover .end_line {
+  text-overflow: ellipsis;
+}
+main .resto_menus .compo .composition:hover .check {
+  opacity: 1;
+  transition: transform 330ms ease-in-out;
+  transform: translate(32px);
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+main .resto_menus .compo .composition .end_line {
   text-overflow: ellipsis;
+  border: 1px solid red;
 }
 main .resto_menus .compo .composition:hover .end_line .euro {
   padding-right: 25px;
   transform: translate(-35px);
-  overflow: hidden;
+}
+main .resto_menus .compo .composition .end_line p {
+  text-overflow: ellipsis;
 }
 main .resto_menus .btn {
   width: 70%;
