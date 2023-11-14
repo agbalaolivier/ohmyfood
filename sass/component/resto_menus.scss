@@ -25,6 +25,7 @@ justify-content: center;
      i{
         position: absolute;
         top: 3em; 
+        
      }
      .heart{
     
@@ -92,14 +93,15 @@ justify-content: center;
              box-sizing: border-box;
              cursor: pointer;
              transition: padding-right 450ms ease-in-out;
-             animation: fadein 3s ease-in ;
+             animation: fadein 3s ease-in;
+             
 
            
 
              @keyframes fadein {
                 0% {
                   opacity: 0;
-                  transform: translateX(-50px);
+                  transform: translateX(-50);
 
                   
                 }
@@ -116,6 +118,7 @@ justify-content: center;
                 margin-left: 0.5em;
                 font-family: roboto sans serif;
                 text-overflow: ellipsis;
+                
              }
             
             
@@ -145,12 +148,15 @@ justify-content: center;
                         transition: transform;
                         transition-property: all;
                         transition-duration: 450ms;
+
+                        
                         
                         } 
                         
                         .check:hover{
                             opacity: 1;
                             transform: translate(32px);
+                            
                             
                         
                             
@@ -161,7 +167,6 @@ justify-content: center;
                         font-family: roboto sans serif;
                         overflow: hidden;
                         white-space: nowrap;
-                       
                         transition-property:  all;
                         transition-duration: 450ms;
                         transition: padding-right 450ms ease-in-out;
@@ -172,8 +177,6 @@ justify-content: center;
                             
                             margin-left: 0.5em;
                             font-size: 0.8em;
-                            overflow: hidden;
-                            white-space: nowrap;
                             text-overflow: ellipsis;
                             
                             
@@ -209,24 +212,21 @@ justify-content: center;
                         }
                     }          
                 }
-                .composition:hover .end_line{
+                .composition:hover h2{
                     text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    max-width: 100px;
 
                 }
                 .composition:hover .check{
                     opacity: 1; 
                    transition: transform 330ms ease-in-out;
                    transform: translate(32px);
-                   text-overflow: ellipsis;
-                   overflow: hidden;
-                   white-space: nowrap;
+                
 
                 }
              
-             .composition .end_line {
-                text-overflow: ellipsis;
-                border: 1px solid red;
-             }
              
 
              
@@ -242,11 +242,6 @@ justify-content: center;
              
                      
                      
-         }
-         .compo .composition .end_line p{
-              
-              text-overflow: ellipsis;
-
          }
         
     

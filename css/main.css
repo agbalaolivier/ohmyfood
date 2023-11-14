@@ -246,7 +246,7 @@ main .resto_menus .compo .composition {
 @keyframes fadein {
   0% {
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateX(-50);
   }
   100% {
     opacity: 1;
@@ -300,8 +300,6 @@ main .resto_menus .compo .composition .end_line {
 main .resto_menus .compo .composition .end_line p {
   margin-left: 0.5em;
   font-size: 0.8em;
-  overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 main .resto_menus .compo .composition .end_line p .euro {
@@ -322,27 +320,20 @@ main .resto_menus .compo .composition .end_line p .euro {
     opacity: 1;
   }
 }
-main .resto_menus .compo .composition:hover .end_line {
+main .resto_menus .compo .composition:hover h2 {
   text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100px;
 }
 main .resto_menus .compo .composition:hover .check {
   opacity: 1;
   transition: transform 330ms ease-in-out;
   transform: translate(32px);
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-main .resto_menus .compo .composition .end_line {
-  text-overflow: ellipsis;
-  border: 1px solid red;
 }
 main .resto_menus .compo .composition:hover .end_line .euro {
   padding-right: 25px;
   transform: translate(-35px);
-}
-main .resto_menus .compo .composition .end_line p {
-  text-overflow: ellipsis;
 }
 main .resto_menus .btn {
   width: 70%;
@@ -837,6 +828,7 @@ main .resto_menus .btn:hover {
   .menus .menu .card_info .card_title {
     font-family: "roboto" sans-serif;
     font-weight: 700;
+    font-size: x-large;
     padding-left: 1em;
   }
   .menus .menu .card_info span {
